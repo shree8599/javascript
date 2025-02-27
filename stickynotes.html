@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+
+      
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        .note{
+            width: 200px;
+            height: auto;
+          margin-top: 20px;
+          margin-left: 20px;
+            padding: 10px;
+            overflow: auto;
+            font-size: small;
+        }
+       .close{
+              position: absolute;
+              top: 0;
+              right: 0;
+              cursor: pointer;
+              font-size: larger;
+       }
+       .btn2{
+              position: absolute;
+              top: 10px;
+              right: 0;
+              font-size: large;
+              padding: 5px;
+              background-color: black;
+              color: #fff;
+              border: 0;
+              cursor: pointer;
+              border-radius: 20%;
+              cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <div class="container flex max-w-screen h-screen">
+      <div class="left w-1/2 bg-fuchsia-800 h-100vh  justify-center flex-col"> 
+        <h1 class="text-3xl text-amber-100 mx-20">Sticky Notes</h1>
+            <form action="">
+            <textarea name="" id="" placeholder=" // write here..." class="bg-amber-100 h-66 w-2/3 scroll-auto my-10 mx-10 "  ></textarea>
+           <label for="change" class="px-2 text-3xl ">Change Color :</label>
+            <input type="color" name="change" id="change" value="#00ffff" >
+<br>
+<br>
+<label for="btn"></label>
+          
+            <button type="submit" id="btn" class=" btn1 border-0 rounded-4xl text-3xl text-amber-100 px-2.5 mt-1 py-2 ml-4 bg-violet-500">Add note</button>
+        </form>
+    </div>
+        <div class="right w-1/2 bg-amber-400 h-100vh flex-col justify-center text-3xl relative">
+            <h1>Your notes</h1>
+            <button class="btn2">Undo</button>
+            <div class="nContainer ">
+  
+            </div>
+        </div>
+ 
+</div>
+</body>
+<script src="sticky.js"></script>
+</html>
