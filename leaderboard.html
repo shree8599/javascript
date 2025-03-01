@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+<style>
+    .elements{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px; 
+        justify-content: space-evenly;
+    }
+    .scoreContainer{
+     
+        width: 80%;
+        height: auto;
+      
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+       
+        background-color: #f3f4f6;
+        border-radius: 10px;
+    }
+    .deleteBtn{
+        cursor: pointer;
+        font-size: larger;
+    }
+    .plus{
+        cursor: pointer;
+        font-size: larger;
+    }
+    .minus{
+        cursor: pointer;
+        font-size: larger;
+    }
+</style>
+
+</head>
+<body class="bg-blue-800">
+
+    <div class="container   flex justify-center  items-center">
+        <div class="leaderboard  bg-blue-600 ml-29  p-5 rounded-2xl shadow-2xl bg-linear-to-br from-blue-300 to-blue-800 mt-10">
+            <h1 class="text-4xl text-yellow-500 text-center">
+                🏆LEADERBOARD🏆
+            </h1>
+        </div>
+    </div>
+                <div class="elements bg-blue-300   h-30 flex flex-wrap items-center rounded-2xl shadow-2xl bg-linear-to-br from-blue-300 to-blue-800 mt-10">
+                    <div class=" text-black   text-xl text-center px-5">
+                       
+                    <form action="" id="myForm">
+                        
+                    <input class=" fname border-2 bg-amber-100 " type="text" placeholder="First Name" autofocus required>
+                    <input class=" lname border-2 bg-amber-100"type="text" placeholder="Last Name" required>
+                    <input class=" score  border-2 bg-amber-100" type="number" placeholder="Score" min="0" max="200" required>
+                    <select name="Select Country" id="" value="Select Country" class="country border-2 bg-amber-100 ">
+                        <option value="" disabled selected>Select Country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                    <button  type = "submit" class="bg-white text-black  p-2 rounded-2xl mt-2">Add score</button>
+                </form>
+                </div>
+               
+                </div>
+           
+                <div class="nContainer w-full"></div>
+   
+    <script src="lead.js"></script>
+</body>
+</html>
