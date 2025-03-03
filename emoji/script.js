@@ -3,26 +3,29 @@ import { emojiList } from "./export.js";
 const form=document.querySelector('form');
 const input=document.querySelector('input');
 const resultsDiv=document.querySelector('.results');
-const all = document.querySelector('.all');
-const face = document.querySelector('.face');
-const hand = document.querySelector('.hand');
-const book=document.querySelector('.book');
-const sports=document.querySelector('.sports');
-const flag = document.querySelector('.flag');
 window.addEventListener('load',()=>display(emojiList));
 
 form.addEventListener('submit',search);
 input.addEventListener('keyup',search);
 
 
+
+
 function search(e){
     e.preventDefault();
+    let filtered;
     const value=input.value.toLowerCase();
-    const filtered=emojiList.filter((obj)=>{
+  
+     filtered=emojiList.filter((obj)=>{
         return obj.description.includes(value) || obj.tags.toString().includes(value) || obj.aliases.toString().includes(value);
     });
-display(filtered);
+    
+    display(filtered);
 }
+    
+
+
+
 function display(arr){
 const fragment=document.createDocumentFragment();
 resultsDiv.innerHTML="";
@@ -56,6 +59,14 @@ resultsDiv.append(fragment);
 }
 
 
-
+function copyToClipBoard(text){
+    window.navigator.clipboard.writeText(text)
+    .then(response => {
+        alert("Emoji Copied Successfully!");
+    })
+    .catch(e => {
+        alert("Something went wrong!");
+    })
+}
 
 
