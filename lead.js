@@ -69,7 +69,6 @@ renderScore();
 })
 
 
-// Sort the newscore array before rendering
 
 
 
