@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji List</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        .parent{
+            width: 100%;
+            height: auto;
+            padding: 10px 10px;
+           gap: 24vw;
+           font-size: 1.4rem;
+           font-weight: 600;
+           text-align:justify;
+           border-bottom: 1px solid black;
+        }
+      .desc{
+            font-size: 1rem;
+            font-weight: 400;
+        padding-left: 10%;
+      text-align: left;
+        }
+
+      
+    </style>
+
+</head>
+
+<body class="bg-[#ffe54c]">
+<h1 class="text-4xl text-center mt-5  font-semibold">Emojee - Emoji 🔍 Application</h1>
+    <div class="search flex flex-wrap mt-5 justify-evenly text-sm mx-auto w-1/2 text-center ">
+     <form action="">
+
+        <input type="text" placeholder="Search Emoji" id="search" class="bg-white mt-2
+         p-2 rounded-lg shadow-2xl mb-2" />
+        <button class="search-btn border-0 bg-white font-semibold p-2 rounded-lg shadow-2xl mb-2"type="submit">Search</button>
+        </form>
+    </div>
+    <div class="results"></div>
+    
+</body>
+<script src="script.js" type="module"></script>
+</html> 
