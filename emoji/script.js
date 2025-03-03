@@ -58,6 +58,11 @@ arr.forEach(element => {
 resultsDiv.append(fragment);
 }
 
+resultsDiv.addEventListener('click', (e) => {
+    if (e.target.classList.contains('icon')) {
+        copyToClipBoard(e.target.innerText);
+    }
+});
 
 function copyToClipBoard(text){
     window.navigator.clipboard.writeText(text)
