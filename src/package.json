@@ -10,7 +10,7 @@
   "main": "dark.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "npx @tailwindcss/cli -i ./src/input.css -o ./emoji/style.css --watch"
+    "dev" : "npx @tailwindcss/cli -i ./src/input.css -o ./movie/output.css --watch"
   },
   "repository": {
     "type": "git",
