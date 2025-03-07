@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            color: #d2232a;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #d2232a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #b71c1c;
+        }
+        #orderId {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: #ff6600;
+            display: none;
+        }
+        .order {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #foodImage {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            form {
+                width: 90%;
+                padding: 15px;
+            }
+            button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Burger King</h1>
+    <h2>Menu</h2>
+    <form id="menuForm">
+        <label><input type="checkbox" name="food" value="Burger"> Burger - $5.00</label><br>
+        <label><input type="checkbox" name="food" value="Pasta"> Pasta - $6.00</label><br>
+        <label><input type="checkbox" name="food" value="Fries"> Fries - $2.50</label><br>
+        <label><input type="checkbox" name="food" value="Coke"> Coke - $1.50</label><br>
+        <button type="button">Order Now</button>
+    </form>
+    <div class="order">
+        <img src="" id="foodImage" alt="">
+        <div id="orderId">
+            Order id :<span id="orderIdValue"></span>
+        </div>
+    </div>
+    <script src="burger.js"></script>
+</body>
+</html>
