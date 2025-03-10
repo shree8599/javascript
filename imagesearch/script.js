@@ -1,4 +1,4 @@
-const accessKey = '08TaUJ1f3mY5kpw4hjuCcZi-r-YtbY0WSTRCD_FlV_o'; // Replace with your Unsplash API key
+const accessKey = '08TaUJ1f3mY5kpw4hjuCcZi-r-YtbY0WSTRCD_FlV_o'; 
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 const imagesContainer = document.getElementById('images-container');

@@ -9,10 +9,16 @@ body {
     min-height: 100vh;
   }
   
-  .container {
+.container {
     text-align: center;
+    transition: all 0.3s ease;
+    transform: scale(1);
     width: 80%;
-  }
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
   
   h1 {
     color: #333;
@@ -60,4 +66,36 @@ body {
   img:hover {
     transform: scale(1.05);
   }
-  
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #e5d6d7 0%, #f3d7cf 100%);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+input:focus {
+    outline: none;
+    border-color: #5cb85c;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#images-container img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#images-container img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+} 
