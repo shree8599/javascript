@@ -144,3 +144,8 @@ reset.addEventListener("click",(e)=>{
     select.value = "all";
     displayData(finalData);
 })
+reset.addEventListener("click", (e) => {
+    select.value = "all";
+    offset = 0;
+    getPokemons(pokemonURL);
+});
