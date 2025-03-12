@@ -8,23 +8,29 @@
 
 </head>
 <body>
+    <nav>
     <h1>Pokegenics</h1>
+</nav>
     <div class="wrap">
 <form action="GET">
     <input type="text" placeholder="Search for a pokemon" id="Search">
     <select name="" id="">
-        <option value="all" disabled selected> all types</option>
+        <option value="all"  selected> all types</option>
       
     </select>
+
+    <button type="reset">Reset</button>
 </form>
-
-    <div class="displayPokemon">
-        
-    </div>
-
-
 </div>
 
+<div class="displayPokemon">
+    <h2>loading...</h2>
+</div>
+<div class="iconPlus">
+    <ion-icon id="icon" name="add-outline"></ion-icon>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 <script src="pokemon.js"></script>

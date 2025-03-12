@@ -3,3 +3,91 @@
     padding: 0;
     margin: 0;
 }
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #d4d3dd, #efefbb);
+    min-height: 100vh;
+}
+
+nav h1{
+    text-align: center;
+   font-size: xxx-large;
+margin-bottom: 5px;
+}
+.wrap{
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+.displayPokemon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.final{
+    margin: 20px;
+    width: 200px;
+    height: 275px;
+    text-align: center;
+    perspective: 1000px;
+    opacity: 0.95;
+}
+
+
+
+.final {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.final:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.final h2 {
+    padding: 10px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.final img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.final p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+.displayPokemon {
+    display: flex;
+   flex-wrap: wrap;
+ 
+    gap: 20px;
+    padding: 20px;
+   
+}
+.final {
+    background: linear-gradient(to bottom right, #f7f7f7, #e3e3e3);
+}
+.iconPlus{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f80505;
+    color: yellow;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+    text-align: center;
+    font-size: xx-large;
+    opacity: 0.7;
+}
